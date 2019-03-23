@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Ecommerce">
+		<jta-data-source>java:/ecommerce</jta-data-source>
+
+
+
+		<class>com.ecommerce.models.Product</class>
+		<class>com.ecommerce.models.Category</class>
+		<class>com.ecommerce.models.User</class>
+		<class>com.ecommerce.models.Shop</class>
+		<class>com.ecommerce.models.Location</class>
+		<class>com.ecommerce.models.ProductInfoPk</class>
+		<class>com.ecommerce.models.ProductInfo</class>
+		<class>com.ecommerce.models.FavouritesPk</class>
+		<class>com.ecommerce.models.Favourites</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+</persistence>
